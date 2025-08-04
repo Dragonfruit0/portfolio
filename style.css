@@ -32,7 +32,6 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  transform: rotate(-45deg);
 }
 
 .cursor-trail::after {
@@ -227,20 +226,20 @@ body{
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 1400px; /* Increased max-width */
+  justify-content: center;
+  max-width: 1000px; /* Increased max-width for larger content */
   width: 100%;
-  gap: 50px;
+  text-align: center;
 }
 
 .hero-info {
-  flex: 1;
+  width: 100%;
 }
 
 /* Typing Animation */
 .typing-container h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
+  font-size: 80px; /* Increased from 60px to 80px */
+  margin-bottom: 30px; /* Increased margin */
 }
 
 .highlight-text {
@@ -259,10 +258,10 @@ body{
 
 /* Dynamic Text Animation */
 .dynamic-text-container h2 {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 30px; /* Increased margin */
+  font-size: 40px; /* Increased from 30px to 40px */
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increased margin */
 }
 
 .dynamic-text {
@@ -282,11 +281,10 @@ body{
 }
 
 .hero-description {
-  max-width: 500px;
-  margin-top: 7px;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  font-size: 18px;
+  max-width: 700px; /* Increased max-width */
+  margin: 30px auto; /* Increased margin */
+  line-height: 1.7; /* Slightly increased line height */
+  font-size: 22px; /* Increased from 18px to 22px */
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -294,16 +292,19 @@ body{
 .Buttons{
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px; /* Increased gap */
+  flex-wrap: wrap;
+  margin-top: 40px; /* Added top margin */
 }
 
 .glow-btn {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 20px 40px; /* Increased padding */
   background: linear-gradient(45deg, #4acfee, #53f8c9);
   border: none;
-  border-radius: 40px;
-  font-size: 16px;
+  border-radius: 50px; /* Increased border radius */
+  font-size: 20px; /* Increased font size */
   font-weight: 900;
   color: #0e1217;
   cursor: pointer;
@@ -336,15 +337,15 @@ body{
 .ul-icons{
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px; /* Increased gap */
 }
 
 .social-icon {
   display: inline-flex;
-  padding: 12px;
+  padding: 16px; /* Increased padding */
   border: 2px solid #4acfee;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 24px; /* Increased font size */
   color: #4acfee;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -395,94 +396,7 @@ body{
 }
 
 /* Hero Image - Now with man.jpg and no rotation */
-.hero-img{
-  width: 400px;
-  height: 400px;
-  position: relative;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  box-shadow: 0 0 50px rgba(74, 207, 238, 0.3);
-  transition: all 0.5s ease;
-}
 
-.hero-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 80px rgba(74, 207, 238, 0.5);
-}
-
-.profile-placeholder{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #4acfee, #53f8c9, #6070fd);
-  border-radius: 50%;
-  position: relative;
-  /* Removed rotation animation */
-}
-
-.profile-placeholder img{
-  width: 85%;
-  height: 85%;
-  border-radius: 50%;
-  object-fit: cover;
-  z-index: 2;
-}
-
-/* Profile Rings */
-.profile-rings {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.ring {
-  position: absolute;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  animation: ringPulse 3s ease-in-out infinite;
-}
-
-.ring-1 {
-  width: 120%;
-  height: 120%;
-  top: -10%;
-  left: -10%;
-  animation-delay: 0s;
-}
-
-.ring-2 {
-  width: 140%;
-  height: 140%;
-  top: -20%;
-  left: -20%;
-  animation-delay: 1s;
-}
-
-.ring-3 {
-  width: 160%;
-  height: 160%;
-  top: -30%;
-  left: -30%;
-  animation-delay: 2s;
-}
-
-@keyframes ringPulse {
-  0%, 100% { 
-    transform: scale(1);
-    opacity: 0.3;
-  }
-  50% { 
-    transform: scale(1.1);
-    opacity: 0.6;
-  }
-}
 
 /* Stats Section */
 .stats-section {
@@ -1046,17 +960,14 @@ body{
   }
   
   .typing-container h1 {
-    font-size: 40px;
+    font-size: 50px; /* Increased from 40px */
   }
   
   .dynamic-text-container h2 {
-    font-size: 24px;
+    font-size: 30px; /* Increased from 24px */
   }
   
-  .hero-img {
-    width: 300px;
-    height: 300px;
-  }
+
   
   .info-sec {
     flex-direction: column;
@@ -1093,13 +1004,10 @@ body{
   }
   
   .typing-container h1 {
-    font-size: 32px;
+    font-size: 40px; /* Increased from 32px */
   }
   
-  .hero-img {
-    width: 250px;
-    height: 250px;
-  }
+
   
   .about-card,
   .skills-card,
